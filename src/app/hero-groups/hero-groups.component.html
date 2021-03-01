@@ -1,0 +1,10 @@
+<h1>Hero List Group</h1>
+<ul>
+  <li
+    *ngFor="let hero of heroes; let i = index"
+    (click)="deleteItem(i)"
+    [@flyInOut]="'in'"
+  >
+    <enter-leave-item [name]="hero"></enter-leave-item>
+  </li>
+</ul>

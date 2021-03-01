@@ -1,0 +1,10 @@
+<h1>Auto Calculation</h1>
+<ul>
+  <li
+    *ngFor="let hero of heroes; let i = index"
+    (click)="deleteItem(i)"
+    [@shrinkOut]="'in'"
+  >
+    <enter-leave-item [name]="hero" [zIndex]="i"></enter-leave-item>
+  </li>
+</ul>

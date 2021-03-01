@@ -1,0 +1,10 @@
+<h1>Enter/Leave</h1>
+<ul>
+  <li
+    *ngFor="let name of names; let i = index"
+    (click)="deleteItem(i)"
+    [@flyInOut]="'in'"
+  >
+    <enter-leave-item [name]="name"></enter-leave-item>
+  </li>
+</ul>

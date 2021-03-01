@@ -1,0 +1,12 @@
+<h1>Toggle Animation</h1>
+<button (click)="animationOnOff()" class="btn btn-info">
+  Toggle Animation
+</button>
+<button (click)="toggle()" class="btn btn-info">Toggle Open/Close</button>
+<div
+  [@openClose]="isOpen ? 'open' : 'closed'"
+  class="open-close-container"
+  [@.disabled]="isDisabled"
+>
+  <p>The box is now {{ isOpen ? "Open" : "Closed" }}!</p>
+</div>

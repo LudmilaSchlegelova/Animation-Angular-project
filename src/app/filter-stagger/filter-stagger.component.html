@@ -1,0 +1,15 @@
+<h1>Filter/Stagger</h1>
+<form>
+  <input
+    type="text"
+    class="input"
+    (keyup)="filterHeroes(inputValue.value)"
+    #inputValue
+  />
+</form>
+
+<ul [@filteringAnimation]="totalHeroes">
+  <li *ngFor="let hero of heroes; let i = index" class="hero">
+    <enter-leave-item [name]="hero"></enter-leave-item>
+  </li>
+</ul>

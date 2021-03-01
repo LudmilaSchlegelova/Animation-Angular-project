@@ -1,0 +1,62 @@
+<h1>Animations</h1>
+<nav>
+  <a
+    routerLink="/home"
+    routerLinkActive="btn-danger"
+    id="home"
+    class="btn btn-warning"
+    >Home</a
+  >
+  <a
+    routerLink="/about"
+    routerLinkActive="btn-danger"
+    id="about"
+    class="btn btn-warning"
+    >About</a
+  >
+  <a
+    routerLink="/open-close"
+    routerLinkActive="btn-danger"
+    id="open-close"
+    class="btn btn-warning"
+    >Open/Close</a
+  >
+  <a
+    routerLink="/enter-leave"
+    routerLinkActive="btn-danger"
+    id="open-close"
+    class="btn btn-warning"
+    >Enter/Leave</a
+  >
+  <a
+    routerLink="/filter-stagger"
+    routerLinkActive="btn-danger"
+    id="open-close"
+    class="btn btn-warning"
+    >Filter/Stagger</a
+  >
+  <a
+    routerLink="/hero-groups"
+    routerLinkActive="btn-danger"
+    id="open-close"
+    class="btn btn-warning"
+    >Hero Groups</a
+  >
+  <a
+    routerLink="/auto-calculation"
+    routerLinkActive="btn-danger"
+    id="open-close"
+    class="btn btn-warning"
+    >Auto Calculation</a
+  >
+  <a
+    routerLink="/toggle-animation"
+    routerLinkActive="btn-danger"
+    id="open-close"
+    class="btn btn-warning"
+    >Toggle Animation</a
+  >
+</nav>
+<div [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
